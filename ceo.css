@@ -1,0 +1,103 @@
+#ceoSearchContainer, #ceoSearchItems, #ceoSearchItems div {
+    box-sizing: border-box;
+}
+
+#ceoSearchContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#ceoSearchItems {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+#ceoSearchItems div { /* selectable drop-down box */
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+#ceoSearchItems div:hover {
+    background-color: #e9e9e9;
+}
+
+.ceo-autocomp-active {
+    background-color: dodgerblue !important;
+    color: #fff;
+}
+
+.ceospinner {
+    background-color: lightgray;
+    background-image: url("ajax-loader-crop.gif");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    border: 1px solid darkgray;
+    visibility: hidden;
+}
+
+#ceoaddtopost .ceospinner {
+    top: 115px; /* from container height=250 */
+    left: 175px; /* from container width=350 */
+}
+
+#ceoeditrecipient .ceospinner {
+    top: 185px; /* from container height=350 */
+    left: 250px; /* from container width=600 */
+}
+
+.ceohelp {
+    font-size: 0.7em;
+    color: white;
+    background-color: dodgerblue;
+    border: 1px solid darkblue;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.ceo-button-delete {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    float: right;
+    background: #a00;
+    border-color: #900 #700 #700;
+    box-shadow: 0 1px 0 #700;
+    color: #fff;
+    text-shadow: 0 -1px 1px #700,
+        1px 0 1px #700,
+        0 1px 1px #700,
+        -1px 0 1px #700;
+}
+
+.ceo-button-delete:hover, .ceo-button-delete:focus {
+    background: #b00;
+    border-color: #700;
+    color: #fff;
+}
